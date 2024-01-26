@@ -24,7 +24,7 @@ app.post("/", async function (req, res) {
         number +
         "&ignorePantry=" +
         ignorePantry +
-        "&apiKey=0e70170c98034ae7894c243f460040ad";
+        "&apiKey";
       const response = await axios.get(url);
       const result = response.data;
       res.render("new.ejs", {
